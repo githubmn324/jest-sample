@@ -3,6 +3,8 @@ import App from './App';
 
 test('renders learn react link', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
+  // <a>タグを
+  const linkElement = screen.getByText(/react/i); // i：小文字大文字無視する
+  // ドキュメント内に<a>タグがあるか
   expect(linkElement).toBeInTheDocument();
 });
